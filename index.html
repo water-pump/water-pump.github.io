@@ -14,7 +14,7 @@
       "@type": "Plumber",
       "name": "เคเอส เซอร์วิส ซ่อมติดตั้งระบบปั๊มน้ำ",
       "telephone": "082-712-7490",
-      "url": "https://pump.ksservice89.com",
+      "url": "https://www.ksservice89.com",
       "priceRange": "฿฿",
       "address": {
         "@type": "PostalAddress",
@@ -113,7 +113,6 @@
             width: 100%;
         }
         
-        /* ปรับให้รูปแสดงเต็มใบ ไม่ถูกตัดขอบ */
         .img-responsive {
             width: 100%;
             height: auto;
@@ -149,22 +148,39 @@
         
         .web-btn-wrapper {
             text-align: center;
-            margin: 12px 0;
+            margin: 16px 0;
             padding: 2px;
             width: 100%;
         }
+        /* ขยายปุ่มเว็บไซต์หลักให้ใหญ่และเด่นขึ้น พร้อมจัดรูปแบบให้รูปโลโก้อยู่ในปุ่ม */
         .btn-web { 
             background-color: #ffd600; 
             color: #000000; 
-            font-size: 1.15rem; 
-            padding: 12px 16px; 
-            border: 3px solid #000000;
+            font-size: 1.3rem; 
+            padding: 16px 20px; 
+            border: 4px solid #000000;
             width: 100%;
             max-width: 100%;
-            box-shadow: 0 5px 12px rgba(0,0,0,0.35);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
             word-break: break-word;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 800;
+            text-decoration: none;
         }
         .btn-web:hover, .btn-web:active { background-color: #ffc400; }
+
+        /* สไตล์รูปโลโก้ภายในปุ่มเว็บไซต์หลัก */
+        .btn-web-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 2px solid #000000;
+            object-fit: cover;
+        }
 
         .seo-faint-text {
             font-size: 0.7rem;
@@ -359,7 +375,8 @@
             .card ul li { font-size: 1rem; }
             .btn { width: auto; max-width: 360px; display: inline-flex; }
             .btn-group-hero { flex-direction: row; justify-content: center; gap: 10px; }
-            .btn-web { max-width: 500px; font-size: 1.2rem; padding: 12px 20px; }
+            .btn-web { max-width: 600px; font-size: 1.4rem; padding: 18px 24px; }
+            .btn-web-logo { width: 42px; height: 42px; }
             .seo-faint-text { font-size: 0.7rem; max-width: 850px; }
             .location-box p { font-size: 1rem; }
             .tag { font-size: 0.85rem; padding: 4px 10px; }
@@ -470,7 +487,11 @@
                 ช่างซ่อมปั๊มน้ำ พื้นที่ให้บริการ • ช่างปั๊มน้ำบางนา • ช่างปั๊มน้ำประเวศ • ช่างปั๊มน้ำอุดมสุข • ช่างปั๊มน้ำลาซาล • ช่างปั๊มน้ำแบริ่ง • ช่างปั๊มน้ำอ่อนนุช • ช่างปั๊มน้ำสวนหลวง • ช่างปั๊มน้ำพัฒนาการ • ช่างปั๊มน้ำกรุงเทพฯกรีฑา • ช่างปั๊มน้ำคลองตัน • ช่างปั๊มน้ำสุขุมวิท • ช่างปั๊มน้ำศรีนครินทร์
             </div>
             
-            <a href="https://www.ksservice89.com" target="_blank" class="btn btn-web">🌐 เว็บไซต์หลัก www.ksservice89.com</a>
+            <!-- ปุ่มเว็บไซต์หลักที่ดึงภาพโลโก้มาแสดงแทนไอคอนโลกและขยายให้ใหญ่ขึ้น -->
+            <a href="https://www.ksservice89.com" target="_blank" class="btn btn-web">
+                <img src="logo.png" alt="Logo" class="btn-web-logo">
+                <span>เว็บไซต์หลัก www.ksservice89.com</span>
+            </a>
             
             <div class="seo-faint-text">
                 ช่างปั๊มน้ำลาดกระบัง • ช่างปั๊มน้ำบางจาก • ช่างปั๊มน้ำวัฒนา • ช่างปั๊มน้ำเอกมัย • ช่างปั๊มน้ำพระโขนง • ช่างปั๊มน้ำกิ่งแก้ว • ช่างปั๊มน้ำสำโรง • ช่างปั๊มน้ำราชาเทวะ • ช่างปั๊มน้ำราม 2 • ช่างปั๊มน้ำบางแก้ว • ช่างปั๊มน้ำหนามแดง • ช่างปั๊มน้ำบางพลี • ช่างปั๊มน้ำสมุทรปราการ • ช่างซ่อมปั๊มน้ำใกล้ฉัน กรุงเทพฝั่งตะวันออกฯ และสมุทรปราการ
@@ -485,7 +506,6 @@
             <br>
             
             <a href="https://line.me/ti/p/EUJqXVHGGA" target="_blank" class="qr-link">
-                <!-- แก้ชื่อไฟล์ให้ตรงกับ qr.png ที่อัปโหลดจริง -->
                 <img src="qr.png" alt="QR Code Add LINE" class="qr-img">
             </a>
             <p style="margin-top: 8px; color: #ffd600; font-size: 0.85rem;">(กดที่รูป QR Code หรือสแกนเพื่อแอดไลน์)</p>
@@ -498,4 +518,4 @@
     </div>
 
 </body>
-    </html>
+</html>
